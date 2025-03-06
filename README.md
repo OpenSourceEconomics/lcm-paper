@@ -12,10 +12,3 @@ Development repository for the [LCM](https://github.com/openSourceEconomics/lcm)
    ```console
    typst compile lcm.typ
    ```
-
-### Continuously develop in VS Code
-
-
-1. Install [Typst LSP](https://marketplace.cursorapi.com/items?itemName=nvarner.typst-lsp)
-
-1. Run the command: "Typst: Show the compiled PDF of the currently opened typst file"
