@@ -1,1 +1,8 @@
 *.pdf
+
+# pixi environments
+.pixi
+*.egg-info
+
+# MyST build outputs
+_build
