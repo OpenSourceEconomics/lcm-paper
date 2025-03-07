@@ -120,9 +120,9 @@ certain additive utility shocks (*taste shocks*) in the future.
 
 ## State Transition
 
-In the dynamic models under consideration, the state $X_t$ evolves conditional on past information $\{X_{t-1}, A_{t-1}, \dots, X_0, A_0\}$. We assume that the process satisfies the **Markov property**, i.e. the future state $X_{t+1}$ only depends on the current state $X_t$ and the action $A_t$.
+In the dynamic models under consideration, the state $X_t$ evolves conditional on past states and actions $\{X_{t-1}, A_{t-1}, \dots, X_0, A_0\}$. We assume that the process satisfies the **Markov property**, i.e. the future state $X_{t+1}$ only depends on the current state $X_t$ and the action $A_t$.
 
-This is modelled using the Markov **transition kernel** $P_t$, which describes the distribution of the next state, conditional on the current state and action, i.e.[^2]
+This is modelled using the Markov **transition kernel** $P_{t+1}$, which describes the distribution of the next state, conditional on the current state and action, i.e.[^2]
 
 $$X_{t+1} \sim P_{t+1}(X_t, A_t).$$
 

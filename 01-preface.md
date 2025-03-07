@@ -40,8 +40,7 @@ to the following objective:
 \mathbb{E}\left[ \sum_{t=s}^T \beta^{t-s} \mathcal{U}_t | X_s\right]
 ```
 
-for some $s \in \mathbb{N}$ and a discount factor $\beta \in [0, 1)$, though typically
-$\beta < 1$.
+for some $s \in \mathbb{N}$ and a discount factor $\beta \in [0, 1)$.
 
 In the following, we will use this baseline objective {eq}`eq-lifetime-utility` to
 illustrate the concepts.
