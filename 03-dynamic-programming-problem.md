@@ -121,7 +121,7 @@ It is related to the value function by
 
 $$V_{t}(x_t) = \max_{a_t \in \Gamma_{t}(x_t)} Q_{t}(x_t, a_t).$$
 
-The **conditional-action-value function** $Q_{t}^{c}: \mathbb{X}_t \times \mathbb{A}_t^{d} \to \mathbb{R}$ maps a state and a discrete action to the maximum of the action-value function over the continuous actions:
+The **conditional-continuous-action-value function** $Q_{t}^{c}: \mathbb{X}_t \times \mathbb{A}_t^{d} \to \mathbb{R}$ maps a state and a discrete action to the maximum of the action-value function over the continuous actions:
 
 $$Q_{t}^{c}(x_t, d_t) = \max_{c_t \in \Gamma_{t}^{c}(x_t)} Q_{t}(x_t, (d_t, c_t)).$$
 
@@ -129,7 +129,7 @@ It is related to the value function by
 
 $$V_{t}(x_t) = \max_{d_t \in \Gamma_{t}^{d}(x_t)} Q_{t}^{c}(x_t, d_t).$$
 
-Similary, we can also define the **conditional-policy function** $\pi_{t}^{c}: \mathbb{X}_t \times \mathbb{A}_t^{d} \to \mathbb{A}_t^{c}$ as
+Similary, we can also define the **conditional-continuous-policy function** $\pi_{t}^{c}: \mathbb{X}_t \times \mathbb{A}_t^{d} \to \mathbb{A}_t^{c}$ as
 the optimal continuous action given a state and a discrete action:
 
 $$\pi_{t}^{c}(x_t, d_t) = \argmax_{c_t \in \Gamma_{t}^{c}(x_t)} Q_{t}(x_t, (d_t, c_t)).$$
