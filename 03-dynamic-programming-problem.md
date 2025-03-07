@@ -129,6 +129,15 @@ It is related to the value function by
 
 $$V_{t}(x_t) = \max_{d_t \in \Gamma_{t}^{d}(x_t)} Q_{t}^{c}(x_t, d_t).$$
 
+Similary, we can also define the **conditional-policy function** $\pi_{t}^{c}: \mathbb{X}_t \times \mathbb{A}_t^{d} \to \mathbb{A}_t^{c}$ as
+the optimal continuous action given a state and a discrete action:
+
+$$\pi_{t}^{c}(x_t, d_t) = \argmax_{c_t \in \Gamma_{t}^{c}(x_t)} Q_{t}(x_t, (d_t, c_t)).$$
+
+It is related to the optimal policy by
+
+$$\pi^*_{t}(x_t) = \argmax_{d_t \in \Gamma_{t}^{d}(x_t)} Q_{t}(x_t, (d_t, \pi_{t}^{c}(x_t, d_t))).$$
+
 ## Maximization
 
 In {eq}`eq-bellman` to {eq}`eq-bellman-boundary-policy` we are maximizing over the joint action space of discrete and continuous actions. From a computational perspective, it is easier to think of this problem as first finding the maximum over the continuous action {u}`conditional` on the discrete actions, and then finding the discrete action that achieves the overall maximum.
