@@ -103,7 +103,7 @@ real-valued *utility*, i.e.
 
 $$u_t : \mathbb{X}_t \times \mathbb{A}_t \to \mathbb{R}.$$
 
-Using the notation from the introduction, we have $R_t = u_{t}(X_t, A_t)$.
+Using the notation from the introduction, we have $\mathcal{U}_t = u_{t}(X_t, A_t)$.
 
 :::{note}
 LCM works with utility functions, which are **parametrized** by some parameter
