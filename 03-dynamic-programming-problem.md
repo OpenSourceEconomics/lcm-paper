@@ -123,11 +123,11 @@ $$V_{t}(x_t) = \max_{a_t \in \Gamma_{t}(x_t)} Q_{t}(x_t, a_t).$$
 
 The **conditional-action-value function** $Q_{t}^{c}: \mathbb{X}_t \times \mathbb{A}_t^{d} \to \mathbb{R}$ maps a state and a discrete action to the maximum of the action-value function over the continuous actions:
 
-$$Q_{t}^{c}(x_t, a_t^d) = \max_{a_t^c \in \Gamma_{t}^{c}(x_t)} Q_{t}(x_t, a_t^c, a_t^d).$$
+$$Q_{t}^{c}(x_t, d_t) = \max_{c_t \in \Gamma_{t}^{c}(x_t)} Q_{t}(x_t, (d_t, c_t)).$$
 
 It is related to the value function by
 
-$$V_{t}(x_t) = \max_{a_t^d \in \Gamma_{t}^{d}(x_t)} Q_{t}^{c}(x_t, a_t^d).$$
+$$V_{t}(x_t) = \max_{d_t \in \Gamma_{t}^{d}(x_t)} Q_{t}^{c}(x_t, d_t).$$
 
 ## Maximization
 
@@ -142,8 +142,8 @@ V_{t}(x_t)
 &= \max_{a_t \in \Gamma_{t}(x_t)} \{&&u_{t}(x_t, a_t) + \beta \cdot \mathbb{E}_{X_{t+1} \sim P_{t+1}(x_t, a_t)}\left[ V_{t+1}(X_{t+1})\right]\} \\ 
 & = \max_{a_t \in \Gamma_{t}(x_t)} \{&&u_{t}(x_t, a_t) + \beta \cdot F_{t}(x_t, a_t)\} \\
 & = \max_{a_t \in \Gamma_{t}(x_t)} &&Q_{t}(x_t, a_t) \\
-& = \max_{a_t^d \in \Gamma_{t}^{d}(x_t)} &&\max_{a_t^c \in \Gamma_{t}^{c}(x_t)} Q_{t}(x_t, a_t^c, a_t^d) \\
-& = \max_{a_t^d \in \Gamma_{t}^{d}(x_t)} &&Q_{t}^{c}(x_t, a_t^d).
+& = \max_{d_t \in \Gamma_{t}^{d}(x_t)} &&\max_{c_t \in \Gamma_{t}^{c}(x_t)} Q_{t}(x_t, c_t, d_t) \\
+& = \max_{d_t \in \Gamma_{t}^{d}(x_t)} &&Q_{t}^{c}(x_t, d_t).
 \end{align}
 $$
 

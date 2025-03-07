@@ -11,7 +11,7 @@ author: Tim Mensinger
 | $A_t, a_t$ | The action (and realized action) in period $t$ |
 | $A_t^*, a_t^*$ | The optimal action (and realized optimal action) in period $t$ |
 | $\mathcal{U}_t$ | The instantaneous utility in period $t$ |
-| $c_t, d_t$ | The continuous and discrete actions in period $t$; $a_t = (c_t, d_t)$ |
+| $c_t, d_t$ | The continuous and discrete actions in period $t$; $a_t = (d_t, c_t)$ |
 
 
 ## Spaces
