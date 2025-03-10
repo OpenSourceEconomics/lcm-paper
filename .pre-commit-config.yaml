@@ -66,17 +66,6 @@ repos:
     hooks:
       - id: mdformat
         additional_dependencies:
-          - mdformat-myst
-          - mdformat-ruff
-        args:
-          - --wrap
-          - '88'
-        exclude: README.md
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.22
-    hooks:
-      - id: mdformat
-        additional_dependencies:
           - mdformat-gfm
           - mdformat-gfm-alerts
           - mdformat-ruff
